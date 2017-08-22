@@ -1,0 +1,43 @@
+* {
+   box-sizing: border-box;
+}
+
+html,body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    font-family: "Noto Serif" , serif;
+}
+
+body{
+    background-image: linear-gradient(to top, 
+    rgba(19, 21, 25, 0.5), 
+    rgba(19, 21, 25, 0.5)),
+     url("../img/milo-mcdowell-3027.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+main{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.box {
+    background: linear-gradient(#4C4C4C,#3D4C42);
+    opacity: 0.9;
+    color: #fff;
+    text-align: center;
+    padding: 4em;
+    border-radius: 1em;
+    margin: 1em;
+}
+
+strong{
+    text-shadow: -2px 2px #000;
+}
