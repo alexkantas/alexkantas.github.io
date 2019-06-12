@@ -1,74 +1,219 @@
-* {
-   box-sizing: border-box;
+.body {
+    background-color: #fffffe;
+    font-size: 16px;
 }
 
-html,body{
+.container {
+    width: 95vw;
+    text-align: center;
+    margin: auto;
+}
+
+.head-title {
+    display: inline-block;
+}
+
+.my-name {
+    font-size: 13vw;
+    font-weight: 400;
+    line-height: 1.1;
+    margin: 2vh 0 1vh 0;
+    color: #33333f;
+    width: 100%;
+    font-family: "Coustard", serif;
+    border-bottom: 1px dotted #ccc;
+}
+
+.my-name:hover {
+    color: #000;
+}
+
+.nav-element {
+    color: #444;
+    text-decoration: none;
+    font-family: "Coustard", serif;
+    font-size: 4vw;
+}
+
+.nav-element:hover {
+    color: #000;
+}
+
+.nav-element.active {
+    color: #B8860B;
+}
+
+.navbar {
+    margin-top: 3vh;
+    display: flex;
+    padding: 1vh;
+    justify-content: space-around;
+    border-style: solid;
+    border-width: 1px 0;
+    border-color: #eee;
+}
+
+.profileSection {
+    display: flex;
+    flex-direction: column;
+    margin: 5vh 5vh 3vh 5vh;
+}
+
+.articlesSection {
+    margin: 5vh 5vh 3vh 5vh;
+    font-family: "Lora", Georgia, serif;
+}
+
+.articlesHeader {
+    font-family: "Coustard", serif;
+    font-weight: 400;
+    color: #44444f;
+    letter-spacing: 0.5vw;
+    font-size: 9vw;
+}
+
+.articlesList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.aricleItem {
+    margin-top: 2vh;
+}
+
+.profileImage {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profileText {
+    width: 100%;
+    padding: 3vw;
+    box-sizing: border-box;
+    text-align: left;
+    font-family: "Lora", Georgia, serif;
+}
+
+.myPhoto {
+    max-width: 100%;
+    max-height: 30vh;
+    width: auto;
+    height: auto;
+}
+
+.infoHeader {
+    font-size: 5vw;
+    font-family: "Libre Baskerville", serif;
+}
+
+.infoText {
+    font-size: 4vw;
+}
+
+hr {
+    padding: 0 0 0.1vh 0;
+    outline: 0;
+    border-width: 0 0 0.1vw 0;
+    border-style: dashed;
+    border-color: #ccc;
+}
+
+.aricleItem{
+    padding: 1.2em 0 .6em 0;
+    border-bottom: 1px dashed #ddd;
+}
+
+.aricleTitle{
     padding: 0;
     margin: 0;
-    height: 100vh;
-    font-family: "Noto Serif" , serif;
+    cursor: pointer;
 }
 
-body{
-    background-image: linear-gradient(to top, 
-    rgba(19, 21, 25, 0.5), 
-    rgba(19, 21, 25, 0.5));
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: center;
-    background-attachment: fixed;
-    background-size: cover;
-    color: #fff;
+.aricleDate {
+    display: none;
 }
 
-main{
-    display: flex;
-    height: 100%;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.box {
-    background: linear-gradient(#4C4C4C,#3D4C42);
-    opacity: 0.9;
-    text-align: center;
-    padding: 4em;
-    border-radius: 1em;
-    margin: 1em;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-    text-shadow: -2px 2px #000;
-    transition:color .2s ease-in;
-}
-
-a:visited {
-    text-decoration: none;
-}
-
-a:hover {
-    color: #B2A1A1;
-}
-
-.attribution{
-    position: fixed;
-    right: 2%;
-    bottom: 1em;
-    font-size: 0.8em;
-    font-style: italic;
-}
-
-.copyright{
-    display: block;
-}
-
-@media screen and (max-device-width: 640px) {
-    .attribution{
-        font-size: .2em;
+@media (min-width: 500px) {
+    .my-name {
+        font-size: 12vw;
     }
-
-    .box{
-        padding: 2em;
+    .container {
+        width: 85vw;
+        text-align: center;
+        margin: auto;
     }
+    .nav-element {
+        font-size: 3vw;
+    }
+    .profileSection {
+        flex-direction: row;
+    }
+    .profileImage {
+        width: 50%;
+    }
+    .profileText {
+        width: 50%;
+    }
+    .infoHeader {
+        font-size: 2.5vw;
+    }
+    .infoText {
+        font-size: 1.8vw;
+    }
+    .myPhoto {
+        max-height: 60vh;
+    }
+    .articlesHeader {
+        font-size: 7vw;
+    }
+}
+
+@media (min-width: 800px) {
+    .my-name {
+        font-size: 10vw;
+    }
+    .nav-element {
+        font-size: 2vw;
+    }
+    .infoHeader {
+        font-size: 2vw;
+    }
+    .infoText {
+        font-size: 1.7vw;
+    }
+    .articlesHeader {
+        font-size: 6vw;
+    }
+}
+
+@media (min-width: 900px) {
+    .my-name {
+        font-size: 9vw;
+    }
+    .infoHeader {
+        font-size: 1.8vw;
+    }
+    .infoText {
+        font-size: 1.3vw;
+    }
+    .articlesHeader {
+        font-size: 5vw;
+    }
+}
+
+@media (min-width: 1000px) {
+    .my-name {
+        font-size: 7vw;
+    }
+    .nav-element {
+        font-size: 1.5vw;
+    }
+    .articlesHeader {
+        font-size: 3vw;
+    }
+}

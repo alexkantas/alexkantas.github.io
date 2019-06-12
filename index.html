@@ -1,35 +1,45 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Alexandros Kantas">
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
-    <link rel="stylesheet" href="dist/style.css">
-    <link rel="shortcut icon" type="image/png" href="img/favicon.jpeg" />
-    <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
-    <title>Alex's Page</title>
+    <link rel="shortcut icon" type="image/png" href="./favicon.png"/>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Coustard" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+    <title>Alex Kantas Personal Page</title>
 </head>
 
-<body>
-    <main>
-        <div id="intro" class="box">
-            <h1>Hi!</h1>
-            <h2>This domain is used by <a href="http://kantas.net">Alex</a> for his projects and presantations</h2>
-        </div>
-    </main>
-    <footer>
-        <div class="attribution">
-            <a class="copyright">&copy; Created by Alexandros Kantas</a>
-            <a id="attribution" href="https://unsplash.com/"></a>
-        </div>
-    </footer>
-    <!-- <script src="js/imageModel.js"></script>
-    <script src="js/main.js"></script> -->
-    <script src="dist/imageModel.js"></script>
-    <script src="dist/main.js"></script>
+<body class="body">
+    <div class="container">
+        <header class="head-title">
+            <h1 class="my-name">Alex Kantas</h1>
+        </header>
+        <nav class="navbar">
+            <a class="nav-element active" href="#">About</a>
+            <!-- <a class="nav-element" href="/projects">Projects</a> -->
+        </nav>
+        <section class="profileSection">
+            <div class="profileImage">
+                <picture>
+                    <source media="(max-width: 500px)" srcset="./img/me-wappier-croped.jpg">
+                    <img src="./img/me-wappier.jpg" alt="Alex_Kantas_Photo" class="myPhoto">
+                </picture>
+            </div>
+            <div class="profileText">
+                <p class="infoHeader"> My name is Alex Kantas and I am a backend software engineer</p>
+                <p class="infoText">Focused on NodeJS ecosystem.
+                    I'm always looking to learn and master new things.
+                    You can find some personal projects and expiriments on NodeJS , React, Redux, Vue and more in my
+                    projects page.</p>
+
+            </div>
+        </section>
+    </div>
 </body>
 
 </html>
