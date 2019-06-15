@@ -138,6 +138,23 @@ hr {
     display: none;
 }
 
+.social-logos{
+    border-top-style:dotted; 
+    border-top-color:#ccc;
+    padding-top: 2vh; 
+}
+
+.social-logos > a{
+    padding-right: 1vw; 
+}
+
+.social-logos > a > img{
+    max-width: 30%;
+    max-height: 7vh;
+    width: auto;
+    height: auto;
+}
+
 @media (min-width: 500px) {
     .my-name {
         font-size: 12vw;
