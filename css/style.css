@@ -123,12 +123,12 @@ hr {
     border-color: #ccc;
 }
 
-.aricleItem{
+.aricleItem {
     padding: 1.2em 0 .6em 0;
     border-bottom: 1px dashed #ddd;
 }
 
-.aricleTitle{
+.aricleTitle {
     padding: 0;
     margin: 0;
     cursor: pointer;
@@ -138,21 +138,99 @@ hr {
     display: none;
 }
 
-.social-logos{
-    border-top-style:dotted; 
-    border-top-color:#ccc;
-    padding-top: 2vh; 
+.social-logos {
+    border-top-style: dotted;
+    border-top-color: #ccc;
+    padding-top: 2vh;
 }
 
-.social-logos > a{
-    padding-right: 1vw; 
+.social-logos>a {
+    padding-right: 1vw;
 }
 
-.social-logos > a > img{
+.social-logos>a>img {
     max-width: 30%;
     max-height: 7vh;
     width: auto;
     height: auto;
+}
+
+/* CERTIFICATES */
+
+ul.cerificates-container {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.certificate-image {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+.certificate-text {
+    position: absolute;
+    color: #fff;
+    background: #A9A9A9;
+    padding: 0 1em;
+    top: 10px;
+    right: 11px;
+    font-size: 1em;
+    z-index: 3;
+}
+
+.certificate-text-bottom {
+    position: absolute;
+    color: #fff;
+    background: #A9A9A9;
+    padding: 0 1em;
+    bottom: 10px;
+    right: 11px;
+    font-size: 0.5em;
+    z-index: 3;
+}
+
+.cerificates-container>.certificate:hover {
+    opacity: .8;
+    color: #fff;
+    background: black;
+    transition: background-color 1s ease-in;
+}
+
+.cerificates-container>.certificate.noBackgroundChange:hover {
+    background: initial;
+}
+
+.cerificates-container>.certificate {
+    flex-grow: 1;
+    font-weight: bold;
+    font-size: 4vw;
+    text-align: center;
+    margin: 1px;
+    padding: 0;
+    max-height: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+    height: auto;
+    border: 1px solid #ccc;
+}
+
+.cerificates-container>.certificate.noBorder{
+    border: none;
+}
+.cerificates-container>.certificate.noBorder:hover{
+    border: none;
+    background: initial;
+}
+
+.useMontserratFont{
+    font-family: 'Montserrat', serif;
 }
 
 @media (min-width: 500px) {
@@ -232,5 +310,9 @@ hr {
     }
     .articlesHeader {
         font-size: 3vw;
+    }
+    .cerificates-container>.certificate {
+        width: 35vw;
+        font-size: 1.4vw;
     }
 }
