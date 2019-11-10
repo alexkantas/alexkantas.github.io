@@ -1,5 +1,18 @@
+:root {
+    /*--------------------Light Theme Variables (Default)--------------------*/
+    --light-theme-background-color: #fffffe;
+    --light-theme-articlesHeader-color: #44444f;
+    --light-theme-text-color: #33333f;
+    --light-theme-hover-color: #444;
+    /*--------------------Dark Theme Variables--------------------*/
+    --dark-theme-background-color: #101010;
+    --dark-theme-articlesHeader-color: ivory;
+    --dark-theme-text-color: #fff;
+    --dark-theme-hover-color: #383838;
+}
+
 .body {
-    background-color: #fffffe;
+    background-color: var(--light-theme-background-color);
     font-size: 16px;
 }
 
@@ -18,7 +31,7 @@
     font-weight: 400;
     line-height: 1.1;
     margin: 2vh 0 1vh 0;
-    color: #33333f;
+    color: var(--light-theme-text-color);
     width: 100%;
     font-family: "Coustard", serif;
     border-bottom: 1px dotted #ccc;
@@ -29,14 +42,14 @@
 }
 
 .nav-element {
-    color: #444;
+    color: var(--light-theme-hover-color);
     text-decoration: none;
     font-family: "Coustard", serif;
     font-size: 4vw;
 }
 
 .nav-element:hover {
-    color: #000;
+    color: var(--light-theme-hover-color);
 }
 
 .nav-element.active {
@@ -67,7 +80,7 @@
 .articlesHeader {
     font-family: "Coustard", serif;
     font-weight: 400;
-    color: #44444f;
+    color: var(--light-theme-background-color);
     letter-spacing: 0.5vw;
     font-size: 9vw;
 }
@@ -221,16 +234,53 @@ ul.cerificates-container {
     border: 1px solid #ccc;
 }
 
-.cerificates-container>.certificate.noBorder{
+.cerificates-container>.certificate.noBorder {
     border: none;
 }
-.cerificates-container>.certificate.noBorder:hover{
+
+.cerificates-container>.certificate.noBorder:hover {
     border: none;
     background: initial;
 }
 
-.useMontserratFont{
+.useMontserratFont {
     font-family: 'Montserrat', serif;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--dark-theme-background-color)!important;
+    }
+    .profileText {
+        color: var(--dark-theme-text-color);
+    }
+    .my-name {
+        color: var(--dark-theme-text-color);
+    }
+    .my-name:hover {
+        color: var(--dark-theme-hover-color)
+    }
+    .nav-element {
+        color: var(--dark-theme-text-color);
+    }
+    .nav-element:hover {
+        color: var(--dark-theme-hover-color);
+    }
+    .myImage {
+        filter: brightness(50%)contrast(100%);
+    }
+    .certificate {
+        filter: brightness(50%);
+    }
+    .social-logos {
+        filter: invert(100%);
+    }
+    .articlesHeader {
+        color: var(--dark-theme-articlesHeader-color);
+    }
+    ul.cerificates-container {
+        background-color: #202020
+    }
 }
 
 @media (min-width: 500px) {
