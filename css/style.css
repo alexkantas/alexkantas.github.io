@@ -267,7 +267,7 @@ ul.cerificates-container {
         color: var(--dark-theme-hover-color);
     }
     .myImage {
-        filter: brightness(50%)contrast(100%);
+        filter: brightness(75%)contrast(100%);
     }
     .certificate {
         filter: contrast(100%);
@@ -351,7 +351,7 @@ ul.cerificates-container {
     }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1150px) {
     .my-name {
         font-size: 7vw;
     }
