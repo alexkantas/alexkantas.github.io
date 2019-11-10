@@ -270,7 +270,7 @@ ul.cerificates-container {
         filter: brightness(50%)contrast(100%);
     }
     .certificate {
-        filter: brightness(50%);
+        filter: contrast(100%);
     }
     .social-logos {
         filter: invert(100%);
@@ -278,8 +278,8 @@ ul.cerificates-container {
     .articlesHeader {
         color: var(--dark-theme-articlesHeader-color);
     }
-    ul.cerificates-container {
-        background-color: #202020
+    .cerificates-container>.certificate:hover {
+        background: #505050;
     }
 }
 
