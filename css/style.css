@@ -4,11 +4,13 @@
     --light-theme-articlesHeader-color: #44444f;
     --light-theme-text-color: #33333f;
     --light-theme-hover-color: #444;
+    --light-theme-title-hover-color: #000;
     /*--------------------Dark Theme Variables--------------------*/
     --dark-theme-background-color: #101010;
     --dark-theme-articlesHeader-color: ivory;
     --dark-theme-text-color: #fff;
     --dark-theme-hover-color: #383838;
+    --dark-theme-title-hover-color: #cccccc;
 }
 
 .body {
@@ -38,7 +40,7 @@
 }
 
 .my-name:hover {
-    color: #000;
+    color: var(--light-theme-title-hover-color);
 }
 
 .nav-element {
@@ -258,7 +260,7 @@ ul.cerificates-container {
         color: var(--dark-theme-text-color);
     }
     .my-name:hover {
-        color: var(--dark-theme-hover-color)
+        color: var(--dark-theme-title-hover-color);
     }
     .nav-element {
         color: var(--dark-theme-text-color);
