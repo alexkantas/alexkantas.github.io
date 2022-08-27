@@ -10,7 +10,7 @@
     --dark-theme-articlesHeader-color: ivory;
     --dark-theme-text-color: #fff;
     --dark-theme-hover-color: #383838;
-    --dark-theme-title-hover-color: #cccccc;
+    --dark-theme-hover-color-header: rgb(232, 232, 232);
 }
 
 .body {
@@ -251,35 +251,45 @@ ul.cerificates-container {
 
 @media (prefers-color-scheme: dark) {
     body {
-        background-color: var(--dark-theme-background-color)!important;
+        background-color: var(--dark-theme-background-color) !important;
     }
+
     .profileText {
         color: var(--dark-theme-text-color);
     }
+
     .my-name {
         color: var(--dark-theme-text-color);
     }
+
     .my-name:hover {
-        color: var(--dark-theme-title-hover-color);
+        color: var(--dark-theme-hover-color-header)
     }
+
     .nav-element {
         color: var(--dark-theme-text-color);
     }
+
     .nav-element:hover {
         color: var(--dark-theme-hover-color);
     }
+
     .myImage {
         filter: brightness(75%)contrast(100%);
     }
+
     .certificate {
         filter: contrast(100%);
     }
+
     .social-logos {
         filter: invert(100%);
     }
+
     .articlesHeader {
         color: var(--dark-theme-articlesHeader-color);
     }
+
     .cerificates-container>.certificate:hover {
         background: #505050;
     }
@@ -289,32 +299,41 @@ ul.cerificates-container {
     .my-name {
         font-size: 12vw;
     }
+
     .container {
         width: 85vw;
         text-align: center;
         margin: auto;
     }
+
     .nav-element {
         font-size: 3vw;
     }
+
     .profileSection {
         flex-direction: row;
     }
+
     .profileImage {
         width: 50%;
     }
+
     .profileText {
         width: 50%;
     }
+
     .infoHeader {
         font-size: 2.5vw;
     }
+
     .infoText {
         font-size: 1.8vw;
     }
+
     .myPhoto {
         max-height: 60vh;
     }
+
     .articlesHeader {
         font-size: 7vw;
     }
@@ -324,15 +343,19 @@ ul.cerificates-container {
     .my-name {
         font-size: 10vw;
     }
+
     .nav-element {
         font-size: 2vw;
     }
+
     .infoHeader {
         font-size: 2vw;
     }
+
     .infoText {
         font-size: 1.7vw;
     }
+
     .articlesHeader {
         font-size: 6vw;
     }
@@ -342,12 +365,15 @@ ul.cerificates-container {
     .my-name {
         font-size: 9vw;
     }
+
     .infoHeader {
         font-size: 1.8vw;
     }
+
     .infoText {
         font-size: 1.3vw;
     }
+
     .articlesHeader {
         font-size: 5vw;
     }
@@ -357,12 +383,15 @@ ul.cerificates-container {
     .my-name {
         font-size: 7vw;
     }
+
     .nav-element {
         font-size: 1.5vw;
     }
+
     .articlesHeader {
         font-size: 3vw;
     }
+
     .cerificates-container>.certificate {
         width: 35vw;
         font-size: 1.4vw;
