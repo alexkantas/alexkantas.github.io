@@ -249,6 +249,21 @@ ul.cerificates-container {
     font-family: 'Montserrat', serif;
 }
 
+.articleHeader {
+    font-family: "Coustard", serif;
+    font-weight: 400;
+    color: var(--light-theme-articlesHeader-color);
+    letter-spacing: 0.5vw;
+    font-size: 1em;
+}
+
+.videoSection {
+    margin-top: 0.5em;
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+}
+
 @media (prefers-color-scheme: dark) {
     body {
         background-color: var(--dark-theme-background-color) !important;
@@ -292,6 +307,10 @@ ul.cerificates-container {
 
     .cerificates-container>.certificate:hover {
         background: #505050;
+    }
+
+    .articleHeader {
+        color: var(--dark-theme-articlesHeader-color);
     }
 }
 
@@ -376,6 +395,15 @@ ul.cerificates-container {
 
     .articlesHeader {
         font-size: 5vw;
+    }
+
+    .articleHeader {
+        font-size: 2em;
+        margin-bottom: 2em;
+    }
+
+    .videoSection > iframe {
+        width: 76%;
     }
 }
 
