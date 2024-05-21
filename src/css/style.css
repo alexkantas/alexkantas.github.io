@@ -264,6 +264,14 @@ ul.cerificates-container {
     height: 50vh;
 }
 
+.padding2em {
+    padding: 2em;
+}
+
+.maxWidth70 {
+    max-width: 70%;
+}
+
 @media (prefers-color-scheme: dark) {
     body {
         background-color: var(--dark-theme-background-color) !important;
@@ -402,7 +410,7 @@ ul.cerificates-container {
         margin-bottom: 2em;
     }
 
-    .videoSection > iframe {
+    .videoSection>iframe {
         width: 76%;
     }
 }
